@@ -1,0 +1,11 @@
+target-version = "py312"
+line-length = 110
+
+[lint]
+select = ["E", "F", "I", "B"]
+ignore = [
+    "E501",  # line length is a soft target here, not worth failing CI over
+]
+
+[lint.isort]
+known-first-party = ["backend"]
